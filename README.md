@@ -1,3 +1,3 @@
 # Sweater
 
-[Demo](https://sweater.maksimlebedev.ru)
+[Demo](https://sweater.firya.ru)
