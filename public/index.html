@@ -37,13 +37,12 @@
 </head>
 <body>
 	<div id="sweater"></div>
-	<!-- <input type="text" class='input' id='input'> -->
+	
 	<textarea  class='input hidden' id='input'></textarea>
 	
 	<script>
 		const text = (new URL(window.location.href)).searchParams.get('text') || 'с новым\nгодом!'
-		document.querySelector('textarea').value = text
-		console.log(text, document.querySelector('textarea').value)
+		document.getElementById("input").value = text;
 	</script>
 	<script src='js/scripts.min.js'></script>
 </body>
