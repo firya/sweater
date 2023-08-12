@@ -43,6 +43,7 @@
 	<script>
 		const text = (new URL(window.location.href)).searchParams.get('text') || 'с новым\nгодом!'
 		document.querySelector('textarea').value = text
+		console.log(text, document.querySelector('textarea').value)
 	</script>
 	<script src='js/scripts.min.js'></script>
 </body>
