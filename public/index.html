@@ -38,19 +38,8 @@
 <body>
 	<div id="sweater"></div>
 	<!-- <input type="text" class='input' id='input'> -->
-	<?
-		$text = "с новым\nгодом!";
-		if (isset($_GET['text'])) {
-			$text = $_GET['text'];
-		}
-		$addClass = 'hidden';
-		if (isset($_GET['textfield'])) {
-			if ($_GET['textfield'] == 'true') {
-				$addClass = '';
-			}
-		}
-	?>
-	<textarea  class='input <?=$addClass;?>' id='input'><?=$text;?></textarea>
+	<textarea  class='input hidden' id='input'>с новым
+годом!</textarea>
 	
 	<script src='js/scripts.min.js'></script>
 </body>
