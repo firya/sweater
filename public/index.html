@@ -38,9 +38,12 @@
 <body>
 	<div id="sweater"></div>
 	<!-- <input type="text" class='input' id='input'> -->
-	<textarea  class='input hidden' id='input'>с новым
-годом!</textarea>
+	<textarea  class='input hidden' id='input'></textarea>
 	
 	<script src='js/scripts.min.js'></script>
+	<script>
+		const text = (new URL(window.location.href)).searchParams.get('text') || 'с новым\nгодом!'
+		document.querySelector('textarea').value = text
+	</script>
 </body>
 </html>
